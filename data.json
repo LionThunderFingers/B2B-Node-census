@@ -1,21 +1,21 @@
 {
  "activation_height": 973728,
- "b2b": 366,
- "b2b_reachable": 26,
- "dump_ts": 1789839947,
+ "b2b": 371,
+ "b2b_reachable": 21,
+ "dump_ts": 1789846349,
  "enforcing_versions": [],
  "heights": {
   "behind": 0,
-  "day": 24,
+  "day": 19,
   "near": 1,
   "tip": 1
  },
- "max_height": 973032,
- "reachable": 1350,
- "total": 7618,
- "ts": 1789842946,
+ "max_height": 973047,
+ "reachable": 1120,
+ "total": 7791,
+ "ts": 1789846546,
  "versions": {
-  "/Satoshi:29.4.1/Knots:20260508/": 22,
+  "/Satoshi:29.4.1/Knots:20260508/": 17,
   "/Satoshi:29.4.1/Knots:20260508rc4/": 1,
   "/Satoshi:29.4.1/Knots:20260508rc5/": 3
  }
