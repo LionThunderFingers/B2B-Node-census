@@ -1,25 +1,24 @@
 {
  "activation_height": 973728,
- "b2b": 333,
- "b2b_reachable": 61,
- "dump_ts": 1789807939,
+ "b2b": 336,
+ "b2b_reachable": 59,
+ "dump_ts": 1789811140,
  "enforcing_versions": [],
  "heights": {
   "behind": 2,
-  "day": 53,
-  "near": 4,
-  "tip": 2
+  "day": 49,
+  "near": 5,
+  "tip": 3
  },
- "max_height": 972947,
- "reachable": 2739,
- "total": 6644,
- "ts": 1789810527,
+ "max_height": 972957,
+ "reachable": 2664,
+ "total": 6776,
+ "ts": 1789814130,
  "versions": {
-  "/Satoshi:29.4.1()/Knots:20260508/": 1,
   "/Satoshi:29.4.1(BIP110 meow miao)/Knots:20260508/": 1,
   "/Satoshi:29.4.1(Nordrassil)/Knots:20260508/": 1,
   "/Satoshi:29.4.1(Undersector XBT)/Knots:20260508/": 1,
-  "/Satoshi:29.4.1/Knots:20260508/": 50,
+  "/Satoshi:29.4.1/Knots:20260508/": 49,
   "/Satoshi:29.4.1/Knots:20260508rc4/": 4,
   "/Satoshi:29.4.1/Knots:20260508rc5/": 3
  }
