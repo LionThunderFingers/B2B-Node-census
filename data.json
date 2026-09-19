@@ -1,23 +1,23 @@
 {
  "activation_height": 973728,
- "b2b": 360,
- "b2b_reachable": 33,
- "dump_ts": 1789833546,
+ "b2b": 363,
+ "b2b_reachable": 30,
+ "dump_ts": 1789836747,
  "enforcing_versions": [],
  "heights": {
   "behind": 0,
-  "day": 28,
+  "day": 24,
   "near": 4,
-  "tip": 1
+  "tip": 2
  },
- "max_height": 973016,
- "reachable": 1641,
- "total": 7487,
- "ts": 1789835744,
+ "max_height": 973018,
+ "reachable": 1489,
+ "total": 7548,
+ "ts": 1789839346,
  "versions": {
   "/Satoshi:29.4.1(BIP110 meow miao)/Knots:20260508/": 1,
-  "/Satoshi:29.4.1/Knots:20260508/": 27,
-  "/Satoshi:29.4.1/Knots:20260508rc4/": 2,
-  "/Satoshi:29.4.1/Knots:20260508rc5/": 3
+  "/Satoshi:29.4.1/Knots:20260508/": 24,
+  "/Satoshi:29.4.1/Knots:20260508rc4/": 1,
+  "/Satoshi:29.4.1/Knots:20260508rc5/": 4
  }
 }
