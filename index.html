@@ -120,17 +120,20 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line-soft);
 
   <div class="scope">
     <span class="k">Scope</span>
-    <p><strong>These are reachable nodes only.</strong> A crawler can only count nodes that
-       accept incoming connections. Nodes behind NAT or a firewall that never listen are
-       invisible to it, so every figure here is a <strong>lower bound</strong> on the real
-       network, not a total. Version shares are shares of what is reachable.</p>
+    <p><strong>Two limits, both of which make these numbers a lower bound.</strong>
+       First, a crawler only sees nodes that accept incoming connections &mdash; anything behind
+       NAT that never listens is invisible to it. Second, &ldquo;rated good&rdquo; is the
+       seeder&rsquo;s own quality gate (port, services, protocol version, reported height and
+       sustained uptime), <strong>not</strong> a live reachability test: a spot check found
+       most nodes it rates as not-good still accept connections. Treat the good count as
+       &ldquo;confidently serveable&rdquo;, not as &ldquo;how many nodes are up&rdquo;.</p>
   </div>
 
   <div class="figures">
     <div class="fig lead"><div class="v num" id="figUp">&mdash;</div>
-      <div class="k">fork nodes reachable</div><div class="note">advertising NODE_BLAKE2B</div></div>
+      <div class="k">fork nodes rated good</div><div class="note">by the seeder own quality gate</div></div>
     <div class="fig"><div class="v num" id="figB2">&mdash;</div>
-      <div class="k">advertise the fork bit</div><div class="note">most did not answer</div></div>
+      <div class="k">advertise the fork bit</div><div class="note">seen by the crawler</div></div>
     <div class="fig"><div class="v num" id="figCrawl">&mdash;</div>
       <div class="k">nodes crawled overall</div><div class="note">both chains share port 8333</div></div>
     <div class="fig"><div class="v num" id="figTip">&mdash;</div>
@@ -201,7 +204,7 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line-soft);
       <div class="fig lead"><div class="v num" id="stQual">&mdash;</div>
         <div class="k">nodes meet the bar</div><div class="note" id="stCrit">&mdash;</div></div>
       <div class="fig"><div class="v num" id="stSeen">&mdash;</div>
-        <div class="k">reachable nodes assessed</div><div class="note">fork nodes answering now</div></div>
+        <div class="k">fork nodes assessed</div><div class="note">those the seeder rates good</div></div>
       <div class="fig"><div class="v num" id="stAge">&mdash;</div>
         <div class="k">days of observation</div><div class="note">longer means a stronger list</div></div>
     </div>
@@ -237,7 +240,13 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line-soft);
       <li>Fork nodes are identified by service bit 28
           (<span class="num">0x10000000</span>, <span class="num">NODE_BLAKE2B</span>).</li>
       <li>A node reporting the fork bit while running software with no BLAKE2b support is
-          counted as reachable but flagged, since it is either misconfigured or misreporting.</li>
+          still counted, but flagged, since it is either misconfigured or misreporting.</li>
+      <li><strong>&ldquo;Rated good&rdquo; is not a liveness check.</strong> It is the seeder&rsquo;s
+          internal gate, combining correct port, advertised services, protocol version, reported
+          block height and sustained uptime history. A node can be perfectly reachable and still
+          not clear it &mdash; sampling 15 nodes rated not-good, 12 accepted connections. The
+          count is deliberately conservative, and the honest reading is
+          &ldquo;at least this many&rdquo;.</li>
       <li>Regenerated hourly. The timestamp above is when the figures were taken, not when
           you opened the page.</li>
     </ul>
