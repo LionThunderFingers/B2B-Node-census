@@ -1,16 +1,29 @@
 {
- "generated": 1789840384,
+ "generated": 1789843986,
  "crawler_started": 1789728022,
- "crawler_age_days": 1.3,
+ "crawler_age_days": 1.34,
  "criterion": {
   "window": "8h",
   "threshold_pct": 90.0,
   "explanation": "Reachable fork nodes with at least 90% reliability over the 8h window. That window is the longest this crawler has been running for, so the list gets stronger the longer it runs."
  },
  "qualifying_count": 0,
- "observed_count": 26,
+ "observed_count": 23,
  "nodes": [],
  "all_reachable": [
+  {
+   "address": "[2806:2f0:56e1:c022:9dd:51fa:bcc7:ea05]:8333",
+   "uptime": {
+    "2h": 99.79,
+    "8h": 78.65,
+    "1d": 40.23,
+    "7d": 7.09,
+    "30d": 1.7
+   },
+   "height": 973035,
+   "services": "10000c09",
+   "qualifies": false
+  },
   {
    "address": "47.45.171.212:8333",
    "uptime": {
@@ -103,32 +116,6 @@
    "qualifies": false
   },
   {
-   "address": "76.186.131.69:8333",
-   "uptime": {
-    "2h": 99.78,
-    "8h": 78.23,
-    "1d": 39.84,
-    "7d": 7.0,
-    "30d": 1.68
-   },
-   "height": 972980,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
-   "address": "46.62.234.108:8333",
-   "uptime": {
-    "2h": 99.74,
-    "8h": 77.49,
-    "1d": 39.17,
-    "7d": 6.86,
-    "30d": 1.64
-   },
-   "height": 972982,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
    "address": "173.25.44.90:8333",
    "uptime": {
     "2h": 95.89,
@@ -138,19 +125,6 @@
     "30d": 0.88
    },
    "height": 972991,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
-   "address": "[2806:2f0:56e1:c022:9dd:51fa:bcc7:ea05]:8333",
-   "uptime": {
-    "2h": 95.87,
-    "8h": 54.91,
-    "1d": 23.32,
-    "7d": 3.72,
-    "30d": 0.88
-   },
-   "height": 972984,
    "services": "10000c09",
    "qualifies": false
   },
@@ -190,19 +164,6 @@
     "30d": 0.86
    },
    "height": 973012,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
-   "address": "[2a00:23a8:83b:2201::152]:8333",
-   "uptime": {
-    "2h": 95.28,
-    "8h": 54.07,
-    "1d": 23.11,
-    "7d": 3.71,
-    "30d": 0.88
-   },
-   "height": 972982,
    "services": "10000c09",
    "qualifies": false
   },
@@ -272,19 +233,6 @@
    "qualifies": false
   },
   {
-   "address": "115.70.110.4:8333",
-   "uptime": {
-    "2h": 12.97,
-    "8h": 3.41,
-    "1d": 1.15,
-    "7d": 0.17,
-    "30d": 0.04
-   },
-   "height": 972980,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
    "address": "77.42.124.253:8333",
    "uptime": {
     "2h": 12.97,
@@ -320,6 +268,19 @@
     "30d": 0.04
    },
    "height": 973000,
+   "services": "10000c09",
+   "qualifies": false
+  },
+  {
+   "address": "115.70.110.4:8333",
+   "uptime": {
+    "2h": 0.65,
+    "8h": 1.62,
+    "1d": 0.9,
+    "7d": 0.16,
+    "30d": 0.04
+   },
+   "height": 972980,
    "services": "10000c09",
    "qualifies": false
   },
