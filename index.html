@@ -137,15 +137,6 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line-soft);
       <div class="k">highest block seen</div><div class="note">across fork nodes</div></div>
   </div>
 
-  <section>
-    <div class="sec-head">
-      <h2>Software in use on the fork</h2>
-      <p>This is the number that matters before a consensus change. A node only enforces a
-         new rule if it is running code that contains it.</p>
-    </div>
-    <div class="panel"><div class="bars" id="versionBars"></div></div>
-  </section>
-
   <section id="activationSection">
     <div class="sec-head">
       <h2>Long coinbase maturity activates at block <span class="num" id="actHeight">&mdash;</span></h2>
@@ -158,6 +149,15 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line-soft);
       <div><div class="big num" id="cdReady">&mdash;</div>
         <div class="lbl">of reachable fork nodes on a release containing it</div></div>
     </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Software in use on the fork</h2>
+      <p>This is the number that matters before a consensus change. A node only enforces a
+         new rule if it is running code that contains it.</p>
+    </div>
+    <div class="panel"><div class="bars" id="versionBars"></div></div>
   </section>
 
   <section>
@@ -177,6 +177,53 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line-soft);
       Heights are as of each node's last handshake, not this instant, so some of the spread
       is crawl recency rather than real lag. A genuine split would show as a persistent
       cluster in the bottom row across several updates.
+    </p>
+  </section>
+
+  <section id="stableSection">
+    <div class="sec-head">
+      <h2>Stable nodes list, for fixed-seed runners</h2>
+      <p>If you run a <strong>curated, fixed-list</strong> seed rather than a crawler, the hard
+         part is knowing which nodes are actually reliable. This is that evidence: fork nodes
+         this crawler has found consistently reachable, with the figures behind the claim.</p>
+    </div>
+
+    <div class="scope" style="margin-top:0">
+      <span class="k">Read first</span>
+      <p><strong>This is evidence to curate from, not a list to serve unexamined.</strong>
+         A curated seed is resistant to Sybil attacks precisely because a human chooses it
+         — an attacker cannot get in by running nodes. Serving this list verbatim would hand
+         that property away, because anything that keeps its uptime high ends up here
+         automatically. Use it to inform your judgement, not to replace it.</p>
+    </div>
+
+    <div class="figures" style="margin-top:16px">
+      <div class="fig lead"><div class="v num" id="stQual">&mdash;</div>
+        <div class="k">nodes meet the bar</div><div class="note" id="stCrit">&mdash;</div></div>
+      <div class="fig"><div class="v num" id="stSeen">&mdash;</div>
+        <div class="k">reachable nodes assessed</div><div class="note">fork nodes answering now</div></div>
+      <div class="fig"><div class="v num" id="stAge">&mdash;</div>
+        <div class="k">days of observation</div><div class="note">longer means a stronger list</div></div>
+    </div>
+
+    <div class="scroll" style="margin-top:18px">
+      <table>
+        <thead><tr>
+          <th scope="col">Address</th>
+          <th scope="col" style="text-align:right">2h</th>
+          <th scope="col" style="text-align:right">1d</th>
+          <th scope="col" style="text-align:right">7d</th>
+          <th scope="col">Software</th>
+        </tr></thead>
+        <tbody id="stableRows"></tbody>
+      </table>
+    </div>
+    <p style="margin-top:11px;font-size:13px;color:var(--text-3)">
+      Full machine-readable list, including every reachable node and its figures:
+      <a href="stable-nodes.json" style="color:var(--signal)">stable-nodes.json</a>.
+      Longer windows read low while the crawler is young — they are averages that start
+      empty and fill as it runs, which is why the qualifying window widens over time
+      rather than being fixed at 30 days from day one.
     </p>
   </section>
 
@@ -254,12 +301,38 @@ function render(d) {
   ].map(([l, n]) => `<tr><td>${l}</td><td class="n">${n ?? 0}</td></tr>`).join("");
 }
 
+function renderStable(s) {
+  document.getElementById("stQual").textContent = fmt(s.qualifying_count);
+  document.getElementById("stSeen").textContent = fmt(s.observed_count);
+  document.getElementById("stAge").textContent = s.crawler_age_days.toFixed(1);
+  document.getElementById("stCrit").textContent =
+    "≥" + s.criterion.threshold_pct + "% over " + s.criterion.window;
+
+  const rows = s.nodes.slice(0, 25);
+  document.getElementById("stableRows").innerHTML = rows.length
+    ? rows.map(n => `<tr>
+        <td class="mono" style="font-family:var(--mono);font-size:12.5px;word-break:break-all">${n.address}</td>
+        <td class="n">${n.uptime["2h"].toFixed(1)}%</td>
+        <td class="n">${n.uptime["1d"].toFixed(1)}%</td>
+        <td class="n">${n.uptime["7d"].toFixed(1)}%</td>
+        <td style="font-family:var(--mono);font-size:12px;color:var(--text-2)">${n.version}</td>
+      </tr>`).join("")
+    : `<tr><td colspan="5" style="color:var(--text-3)">No node clears the bar yet. The crawler
+       needs more observation time before any longer-window figure is trustworthy.</td></tr>`;
+}
+
 // Cache-bust so a refresh shows the newest push rather than a cached copy.
 fetch("data.json?t=" + Date.now())
   .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
   .then(render)
   .catch(e => showError("The census file could not be fetched (" + e.message +
     "). The page itself is fine; the publisher on the seed host may not have run yet."));
+
+// Independent of the census fetch: one failing should not blank the other.
+fetch("stable-nodes.json?t=" + Date.now())
+  .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(renderStable)
+  .catch(() => { document.getElementById("stableSection").style.display = "none"; });
 </script>
 </body>
 </html>
