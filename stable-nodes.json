@@ -1,7 +1,7 @@
 {
- "generated": 1789795507,
+ "generated": 1789797156,
  "crawler_started": 1789728022,
- "crawler_age_days": 0.78,
+ "crawler_age_days": 0.8,
  "criterion": {
   "window": "2h",
   "threshold_pct": 90.0,
