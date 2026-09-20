@@ -1,7 +1,7 @@
 {
- "generated": 1789883611,
+ "generated": 1789887213,
  "crawler_started": 1789728022,
- "crawler_age_days": 1.8,
+ "crawler_age_days": 1.84,
  "criterion": {
   "window": "8h",
   "threshold_pct": 90.0,
@@ -38,19 +38,6 @@
    "qualifies": false
   },
   {
-   "address": "[2a02:2f08:6916:2300:e251:d8ff:fe1a:bfcc]:8333",
-   "uptime": {
-    "2h": 99.75,
-    "8h": 77.71,
-    "1d": 39.37,
-    "7d": 6.9,
-    "30d": 1.65
-   },
-   "height": 973078,
-   "services": "10000c49",
-   "qualifies": false
-  },
-  {
    "address": "85.167.82.160:8333",
    "uptime": {
     "2h": 12.97,
@@ -60,6 +47,19 @@
     "30d": 0.04
    },
    "height": 973094,
+   "services": "10000c09",
+   "qualifies": false
+  },
+  {
+   "address": "[2a02:3100:8255:9700:76d4:35ff:fee6:7b5d]:8333",
+   "uptime": {
+    "2h": 12.97,
+    "8h": 3.41,
+    "1d": 1.15,
+    "7d": 0.17,
+    "30d": 0.04
+   },
+   "height": 973014,
    "services": "10000c09",
    "qualifies": false
   },
