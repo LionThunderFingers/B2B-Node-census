@@ -1,28 +1,15 @@
 {
- "generated": 1789894418,
+ "generated": 1789898020,
  "crawler_started": 1789892370,
- "crawler_age_days": 0.02,
+ "crawler_age_days": 0.07,
  "criterion": {
   "window": "2h",
   "threshold_pct": 90.0,
   "explanation": "Reachable fork nodes with at least 90% reliability over the 2h window. That window is the longest this crawler has been running for, so the list gets stronger the longer it runs."
  },
  "qualifying_count": 2,
- "observed_count": 6,
+ "observed_count": 5,
  "nodes": [
-  {
-   "address": "77.42.124.253:8333",
-   "uptime": {
-    "2h": 99.8,
-    "8h": 78.73,
-    "1d": 40.31,
-    "7d": 7.11,
-    "30d": 1.71
-   },
-   "height": 973104,
-   "services": "10000c09",
-   "qualifies": true
-  },
   {
    "address": "85.167.82.160:8333",
    "uptime": {
@@ -33,25 +20,25 @@
     "30d": 0.9
    },
    "height": 973142,
+   "services": "10000c09",
+   "qualifies": true
+  },
+  {
+   "address": "173.35.33.159:8333",
+   "uptime": {
+    "2h": 93.21,
+    "8h": 49.69,
+    "1d": 20.75,
+    "7d": 3.3,
+    "30d": 0.78
+   },
+   "height": 973146,
    "services": "10000c09",
    "qualifies": true
   }
  ],
  "all_reachable": [
   {
-   "address": "77.42.124.253:8333",
-   "uptime": {
-    "2h": 99.8,
-    "8h": 78.73,
-    "1d": 40.31,
-    "7d": 7.11,
-    "30d": 1.71
-   },
-   "height": 973104,
-   "services": "10000c09",
-   "qualifies": true
-  },
-  {
    "address": "85.167.82.160:8333",
    "uptime": {
     "2h": 96.12,
@@ -61,6 +48,19 @@
     "30d": 0.9
    },
    "height": 973142,
+   "services": "10000c09",
+   "qualifies": true
+  },
+  {
+   "address": "173.35.33.159:8333",
+   "uptime": {
+    "2h": 93.21,
+    "8h": 49.69,
+    "1d": 20.75,
+    "7d": 3.3,
+    "30d": 0.78
+   },
+   "height": 973146,
    "services": "10000c09",
    "qualifies": true
   },
@@ -100,19 +100,6 @@
     "30d": 0.04
    },
    "height": 973014,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
-   "address": "173.35.33.159:8333",
-   "uptime": {
-    "2h": 0.62,
-    "8h": 1.6,
-    "1d": 0.89,
-    "7d": 0.16,
-    "30d": 0.04
-   },
-   "height": 973063,
    "services": "10000c09",
    "qualifies": false
   }
