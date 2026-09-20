@@ -1,14 +1,14 @@
 {
- "generated": 1789901622,
+ "generated": 1789905225,
  "crawler_started": 1789900635,
- "crawler_age_days": 0.01,
+ "crawler_age_days": 0.05,
  "criterion": {
   "window": "2h",
   "threshold_pct": 90.0,
   "explanation": "Reachable fork nodes with at least 90% reliability over the 2h window. That window is the longest this crawler has been running for, so the list gets stronger the longer it runs."
  },
- "qualifying_count": 2,
- "observed_count": 6,
+ "qualifying_count": 1,
+ "observed_count": 5,
  "nodes": [
   {
    "address": "85.167.82.160:8333",
@@ -20,19 +20,6 @@
     "30d": 1.18
    },
    "height": 973164,
-   "services": "10000c09",
-   "qualifies": true
-  },
-  {
-   "address": "173.35.33.159:8333",
-   "uptime": {
-    "2h": 93.21,
-    "8h": 49.69,
-    "1d": 20.75,
-    "7d": 3.3,
-    "30d": 0.78
-   },
-   "height": 973146,
    "services": "10000c09",
    "qualifies": true
   }
@@ -52,19 +39,6 @@
    "qualifies": true
   },
   {
-   "address": "173.35.33.159:8333",
-   "uptime": {
-    "2h": 93.21,
-    "8h": 49.69,
-    "1d": 20.75,
-    "7d": 3.3,
-    "30d": 0.78
-   },
-   "height": 973146,
-   "services": "10000c09",
-   "qualifies": true
-  },
-  {
    "address": "[2605:6440:3001:47:7ec2:55ff:fea8:317c]:8333",
    "uptime": {
     "2h": 70.77,
@@ -80,10 +54,10 @@
   {
    "address": "47.203.64.175:8333",
    "uptime": {
-    "2h": 12.97,
-    "8h": 3.41,
-    "1d": 1.15,
-    "7d": 0.17,
+    "2h": 4.74,
+    "8h": 2.65,
+    "1d": 1.06,
+    "7d": 0.16,
     "30d": 0.04
    },
    "height": 973155,
