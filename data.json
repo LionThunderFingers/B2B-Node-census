@@ -1,30 +1,32 @@
 {
  "activation_height": 973728,
- "b2b": 314,
- "b2b_poll_age_max": 201808,
- "b2b_poll_age_median": 3451,
- "b2b_poll_age_p90": 81269,
- "b2b_polled_recently": 235,
- "b2b_reachable": 90,
- "dump_ts": 1789937705,
+ "b2b": 413,
+ "b2b_poll_age_max": 205410,
+ "b2b_poll_age_median": 3860,
+ "b2b_poll_age_p90": 67344,
+ "b2b_polled_recently": 305,
+ "b2b_reachable": 115,
+ "dump_ts": 1789940906,
  "enforcing_versions": [],
  "heights": {
-  "behind": 1,
-  "day": 27,
-  "near": 35,
-  "tip": 27
+  "behind": 3,
+  "day": 1,
+  "near": 13,
+  "tip": 98
  },
- "max_height": 973260,
- "reachable": 3541,
- "total": 9293,
- "ts": 1789940211,
+ "max_height": 973265,
+ "reachable": 3562,
+ "total": 9437,
+ "ts": 1789943813,
  "versions": {
+  "/OracleKnots:29.4.1(Freedom Money)/OracleKnots:20260508/": 1,
   "/Satoshi:29.4.1()/Knots:20260508/": 1,
   "/Satoshi:29.4.1(Bitcoin-is-money)/Knots:20260508/": 1,
-  "/Satoshi:29.4.1/Knots:20260508/": 70,
-  "/Satoshi:29.4.1/Knots:20260508rc4/": 4,
+  "/Satoshi:29.4.1(Undersector XBT)/Knots:20260508/": 1,
+  "/Satoshi:29.4.1/Knots:20260508/": 86,
+  "/Satoshi:29.4.1/Knots:20260508rc4/": 6,
   "/Satoshi:29.4.1/Knots:20260508rc5/": 6,
   "/Satoshi:29.4.2(mempool.guide)/Knots:20260508rc2/": 2,
-  "/Satoshi:29.4.2/Knots:20260508rc2/": 6
+  "/Satoshi:29.4.2/Knots:20260508rc2/": 11
  }
 }
