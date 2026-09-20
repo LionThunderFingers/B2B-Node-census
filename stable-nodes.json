@@ -1,14 +1,14 @@
 {
- "generated": 1789926839,
+ "generated": 1789930441,
  "crawler_started": 1789924997,
- "crawler_age_days": 0.02,
+ "crawler_age_days": 0.06,
  "criterion": {
   "window": "2h",
   "threshold_pct": 90.0,
   "explanation": "Reachable fork nodes with at least 90% reliability over the 2h window. That window is the longest this crawler has been running for, so the list gets stronger the longer it runs."
  },
  "qualifying_count": 89,
- "observed_count": 114,
+ "observed_count": 116,
  "nodes": [
   {
    "address": "104.195.201.236:8333",
@@ -2615,13 +2615,39 @@
   {
    "address": "173.35.33.159:8333",
    "uptime": {
-    "2h": 12.97,
-    "8h": 3.41,
-    "1d": 1.15,
-    "7d": 0.17,
+    "2h": 24.99,
+    "8h": 6.94,
+    "1d": 2.37,
+    "7d": 0.34,
+    "30d": 0.08
+   },
+   "height": 973243,
+   "services": "10000c09",
+   "qualifies": false
+  },
+  {
+   "address": "44.202.235.69:8333",
+   "uptime": {
+    "2h": 24.91,
+    "8h": 6.91,
+    "1d": 2.36,
+    "7d": 0.34,
+    "30d": 0.08
+   },
+   "height": 973243,
+   "services": "10000c09",
+   "qualifies": false
+  },
+  {
+   "address": "136.24.46.236:8333",
+   "uptime": {
+    "2h": 11.19,
+    "8h": 3.29,
+    "1d": 1.14,
+    "7d": 0.16,
     "30d": 0.04
    },
-   "height": 973241,
+   "height": 973242,
    "services": "10000c09",
    "qualifies": false
   },
