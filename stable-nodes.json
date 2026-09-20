@@ -1,53 +1,52 @@
 {
- "generated": 1789905225,
- "crawler_started": 1789900635,
- "crawler_age_days": 0.05,
+ "generated": 1789908827,
+ "crawler_started": 1789907888,
+ "crawler_age_days": 0.01,
  "criterion": {
   "window": "2h",
   "threshold_pct": 90.0,
   "explanation": "Reachable fork nodes with at least 90% reliability over the 2h window. That window is the longest this crawler has been running for, so the list gets stronger the longer it runs."
  },
- "qualifying_count": 1,
- "observed_count": 5,
- "nodes": [
-  {
-   "address": "85.167.82.160:8333",
-   "uptime": {
-    "2h": 98.61,
-    "8h": 65.69,
-    "1d": 29.99,
-    "7d": 4.97,
-    "30d": 1.18
-   },
-   "height": 973164,
-   "services": "10000c09",
-   "qualifies": true
-  }
- ],
+ "qualifying_count": 0,
+ "observed_count": 4,
+ "nodes": [],
  "all_reachable": [
-  {
-   "address": "85.167.82.160:8333",
-   "uptime": {
-    "2h": 98.61,
-    "8h": 65.69,
-    "1d": 29.99,
-    "7d": 4.97,
-    "30d": 1.18
-   },
-   "height": 973164,
-   "services": "10000c09",
-   "qualifies": true
-  },
   {
    "address": "[2605:6440:3001:47:7ec2:55ff:fea8:317c]:8333",
    "uptime": {
-    "2h": 70.77,
-    "8h": 26.47,
-    "1d": 9.74,
-    "7d": 1.45,
-    "30d": 0.34
+    "2h": 89.07,
+    "8h": 42.5,
+    "1d": 16.84,
+    "7d": 2.6,
+    "30d": 0.61
    },
-   "height": 973165,
+   "height": 973182,
+   "services": "10000c09",
+   "qualifies": false
+  },
+  {
+   "address": "[2a02:2f0b:a219:1800:25:79bd:f4c:5c13]:8333",
+   "uptime": {
+    "2h": 65.8,
+    "8h": 24.74,
+    "1d": 9.23,
+    "7d": 1.39,
+    "30d": 0.33
+   },
+   "height": 973178,
+   "services": "10000c09",
+   "qualifies": false
+  },
+  {
+   "address": "199.192.141.65:8333",
+   "uptime": {
+    "2h": 12.97,
+    "8h": 3.41,
+    "1d": 1.15,
+    "7d": 0.17,
+    "30d": 0.04
+   },
+   "height": 973181,
    "services": "10000c09",
    "qualifies": false
   },
@@ -61,32 +60,6 @@
     "30d": 0.04
    },
    "height": 973155,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
-   "address": "[2a02:2f0b:a219:1800:25:79bd:f4c:5c13]:8333",
-   "uptime": {
-    "2h": 3.53,
-    "8h": 2.46,
-    "1d": 1.03,
-    "7d": 0.16,
-    "30d": 0.04
-   },
-   "height": 973135,
-   "services": "10000c09",
-   "qualifies": false
-  },
-  {
-   "address": "[2a02:3100:8255:9700:76d4:35ff:fee6:7b5d]:8333",
-   "uptime": {
-    "2h": 2.02,
-    "8h": 2.14,
-    "1d": 0.99,
-    "7d": 0.16,
-    "30d": 0.04
-   },
-   "height": 973014,
    "services": "10000c09",
    "qualifies": false
   }
