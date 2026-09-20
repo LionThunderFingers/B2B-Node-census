@@ -1,8 +1,8 @@
 {
  "activation_height": 973728,
- "b2b": 392,
+ "b2b": 393,
  "b2b_reachable": 5,
- "dump_ts": 1789884759,
+ "dump_ts": 1789887960,
  "enforcing_versions": [],
  "heights": {
   "behind": 0,
@@ -11,9 +11,9 @@
   "tip": 1
  },
  "max_height": 973104,
- "reachable": 354,
- "total": 8531,
- "ts": 1789886176,
+ "reachable": 324,
+ "total": 8593,
+ "ts": 1789889776,
  "versions": {
   "/Satoshi:29.4.1(Bitcoin-is-money)/Knots:20260508/": 1,
   "/Satoshi:29.4.1/Knots:20260508/": 3,
