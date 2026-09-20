@@ -1,33 +1,33 @@
 {
  "activation_height": 973728,
- "b2b": 387,
- "b2b_poll_age_max": 176591,
- "b2b_poll_age_median": 1276,
- "b2b_poll_age_p90": 56574,
- "b2b_polled_recently": 296,
- "b2b_reachable": 102,
- "dump_ts": 1789914194,
+ "b2b": 382,
+ "b2b_poll_age_max": 180194,
+ "b2b_poll_age_median": 1486,
+ "b2b_poll_age_p90": 60177,
+ "b2b_polled_recently": 313,
+ "b2b_reachable": 111,
+ "dump_ts": 1789917394,
  "enforcing_versions": [],
  "heights": {
   "behind": 2,
-  "day": 3,
-  "near": 95,
-  "tip": 2
+  "day": 4,
+  "near": 100,
+  "tip": 5
  },
- "max_height": 973203,
- "reachable": 258,
- "total": 8993,
- "ts": 1789914994,
+ "max_height": 973213,
+ "reachable": 3072,
+ "total": 9088,
+ "ts": 1789918597,
  "versions": {
   "/Satoshi:29.4.1()/Knots:20260508/": 1,
   "/Satoshi:29.4.1(Bitcoin-is-money)/Knots:20260508/": 1,
   "/Satoshi:29.4.1(Undersector XBT)/Knots:20260508/": 1,
-  "/Satoshi:29.4.1/Knots:20260508/": 83,
-  "/Satoshi:29.4.1/Knots:20260508rc4/": 4,
+  "/Satoshi:29.4.1/Knots:20260508/": 89,
+  "/Satoshi:29.4.1/Knots:20260508rc4/": 6,
   "/Satoshi:29.4.1/Knots:20260508rc5/": 4,
   "/Satoshi:29.4.2(BIP110 meow miao)/Knots:20260508rc2/": 1,
   "/Satoshi:29.4.2(mempool.guide)/Knots:20260508rc2/": 2,
   "/Satoshi:29.4.2/Knots:20260508rc1/": 2,
-  "/Satoshi:29.4.2/Knots:20260508rc2/": 3
+  "/Satoshi:29.4.2/Knots:20260508rc2/": 4
  }
 }
