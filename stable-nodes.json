@@ -1,7 +1,7 @@
 {
- "generated": 1789876407,
+ "generated": 1789880009,
  "crawler_started": 1789728022,
- "crawler_age_days": 1.72,
+ "crawler_age_days": 1.76,
  "criterion": {
   "window": "8h",
   "threshold_pct": 90.0,
@@ -11,6 +11,19 @@
  "observed_count": 5,
  "nodes": [],
  "all_reachable": [
+  {
+   "address": "77.42.124.253:8333",
+   "uptime": {
+    "2h": 99.8,
+    "8h": 78.73,
+    "1d": 40.31,
+    "7d": 7.11,
+    "30d": 1.71
+   },
+   "height": 973104,
+   "services": "10000c09",
+   "qualifies": false
+  },
   {
    "address": "85.24.246.121:8333",
    "uptime": {
@@ -35,19 +48,6 @@
    },
    "height": 973078,
    "services": "10000c49",
-   "qualifies": false
-  },
-  {
-   "address": "77.42.124.253:8333",
-   "uptime": {
-    "2h": 95.71,
-    "8h": 54.49,
-    "1d": 23.08,
-    "7d": 3.68,
-    "30d": 0.87
-   },
-   "height": 973063,
-   "services": "10000c09",
    "qualifies": false
   },
   {
